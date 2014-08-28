@@ -5,10 +5,16 @@ mainClassName = System.getProperty("mainClass")
  
 repositories {
 	mavenCentral()
+	maven {
+		url 'http://repo.spring.io/libs-snapshot'
+		url 'http://repo.spring.io/milestone'
+		url 'http://repo.spring.io/libs-release'
+	}
 }
  
 dependencies {
     compile 'org.springframework:spring-context:4.0.6.RELEASE'
+    compile 'org.springframework.boot:spring-boot-starter-web:1.1.5.RELEASE'
 }
 
 task wrapper(type: Wrapper) {

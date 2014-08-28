@@ -6,6 +6,7 @@ import org.springframework.context.annotation.*;
 @Configuration
 @ComponentScan
 public class Application {
+	
 	@Bean
 	MessageService helloWorldMessageService() {
 		return new HelloWorldMessage();
